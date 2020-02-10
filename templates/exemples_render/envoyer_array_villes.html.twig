@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>This friendly message is coming from:</h1>
+    <ul>
+        <li>{{ lesVilles[0] }}  🍟</li>
+        <li>{{ lesVilles[1] }}  🍣</li>
+        <li>{{ lesVilles[2] }}  🍝</li>
+    </ul>
+    <h2>Ma ville préférée est ... {% if lesVilles[0] == 'Brussels'%}
+    {{ lesVilles[0] }}
+    {% endif %}</h2>
+    
+</div>
+{% endblock %}
